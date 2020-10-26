@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    kubernetes:
+      client:
+        namespace: wm-test
+      loadbalancer:
+        mode: service
+
+server:
+  port: 8088
